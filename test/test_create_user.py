@@ -6,7 +6,7 @@ EXPECTED_MESSAGE = 'w00t!'
 class TestFuncCreateUser(object): 
     @vcr.use_cassette
     def test_func_create_user_stores_user_info(self):
-        from ..app import Request, create_user
+        from app import Request, create_user
 
         test_user = Request(
             username='estherbester', 
